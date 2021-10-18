@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="330" Width="523">
+    <!--<Label Content="Von welchem Druckserver wollen sie Drucker installieren?" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top" Height="32" Width="454" FontWeight="Normal" FontSize="18"/>
+        <RadioButton Content="Sanktelisabeth" HorizontalAlignment="Left" Margin="269,0,0,0" VerticalAlignment="Center" Height="27" Width="107" FontSize="14" Checked="onChecked"/>
+        <RadioButton Content="Schul03" HorizontalAlignment="Left" Margin="417,0,0,0" VerticalAlignment="Center" Height="27" Width="108" FontSize="14" Checked="onChecked"/>
+        <Button x:Name="weiterButton" Content="Weiter" HorizontalAlignment="Left" Margin="534,291,0,0" VerticalAlignment="Top" Height="45" Width="112" IsEnabled="False"/> -->
+
+
+    <StackPanel Margin="20">
+        <Label>Wähle sie bitte einen Druckserver aus:</Label>
+        <RadioButton x:Name="rb_sankte" GroupName="printserver" Checked="rb_server_checked">Sanktelisabeth</RadioButton>
+        <RadioButton x:Name="rb_schul" GroupName="printserver" Checked="rb_server_checked">Schul03</RadioButton>
+
+        <Button x:Name="btn_next" Click="Button_Click" Margin="20" IsEnabled="False" IsDefault="True">Bestätige</Button>
+        <Label x:Name="lbl_server" />
+    </StackPanel>
+
+
+
+</Window>
