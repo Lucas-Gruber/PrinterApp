@@ -28,6 +28,7 @@ namespace WpfApp1
             if (rb_sankte.IsChecked == true)
             {
                 SanktelisabethServerMenu sm = new SanktelisabethServerMenu();
+                MainWindow wm = new MainWindow();
                 this.Content = sm;
             }
             else if (rb_schul.IsChecked == true)
@@ -38,7 +39,28 @@ namespace WpfApp1
 
         private void rb_server_checked(object sender, RoutedEventArgs e)
         {
-            btn_next.IsEnabled = true;
+            btn_accept.IsEnabled = true;
+        }
+
+        private void rb_se_Checked(object sender, RoutedEventArgs e)
+        {
+            btn_accept.IsEnabled = true;
+            btn_accept.NavUri = "/SanktelisabethServerMenu.xaml";
+        }
+
+        private void btn_accept_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(btn_accept.NavUri);
+        }
+
+        private void rb_sankte_Checked_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void rb_schul_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

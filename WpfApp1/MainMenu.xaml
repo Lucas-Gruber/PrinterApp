@@ -7,13 +7,17 @@
       mc:Ignorable="d" 
       d:DesignHeight="330" d:DesignWidth="523"
       Title="MainMenu">
+    <Page.Resources>
+        <SolidColorBrush x:Key="ButtonForeground1" Color="#FF838383"/>
+    </Page.Resources>
 
     <StackPanel Margin="20">
         <Label>Wähle sie bitte einen Druckserver aus:</Label>
-        <RadioButton x:Name="rb_sankte" GroupName="printserver" Checked="rb_server_checked">Sanktelisabeth</RadioButton>
-        <RadioButton x:Name="rb_schul" GroupName="printserver" Checked="rb_server_checked">Schul03</RadioButton>
+        <RadioButton x:Name="rb_sankte" GroupName="printserver" Checked="rb_se_Checked">Sanktelisabeth</RadioButton>
+        <RadioButton x:Name="rb_schul" GroupName="printserver" Checked="rb_schul_Checked">Schul03</RadioButton>
 
-        <Button x:Name="btn_next" Click="Button_Click" Margin="20" IsEnabled="False" IsDefault="True">Bestätige</Button>
+        <Button Command="NavigationService.Navigate(SanktelisabethServerMenu.xaml)"></Button>
+        <local:NavButton x:Name="btn_accept" Click="btn_accept_Click" IsEnabled="False" IsDefault="True" Text="Bestätige" Margin="20" NavUri="/SanktelisabethServerMenu.xaml"  />
         <Label x:Name="lbl_server" />
     </StackPanel>
 </Page>

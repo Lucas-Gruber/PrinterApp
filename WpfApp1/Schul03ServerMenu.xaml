@@ -1,4 +1,4 @@
-﻿<Page Background="White" x:Class="WpfApp1.SanktelisabethServerMenu"
+﻿<Page Background="White" x:Class="WpfApp1.Schul03ServerMenu"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:WpfApp1"
       mc:Ignorable="d" 
       d:DesignHeight="330" d:DesignWidth="523"
-      Title="SanktelisabethServerMenu">
+      Title="Schul03ServerMenu">
 
     <StackPanel Margin="20">
         <Label>Wähle sie bitte die/den Drucker aus den/die sie installieren wollen:</Label>
@@ -17,6 +17,6 @@
 
         <Button x:Name="btn_install" Click="btn_install_Click" Margin="20" IsEnabled="False" IsDefault="True">Installieren</Button>
 
-        <Button Command="NavigationCommands.BrowseBack" x:Name="btn_back" Click="btn_back_Click" Margin="20" HorizontalAlignment="Left" IsCancel="True">Zurück</Button>
+        <Button x:Name="btn_back" Click="btn_back_Click" Margin="20" HorizontalAlignment="Left" IsCancel="True" IsEnabled="False">Zurück</Button>
     </StackPanel>
 </Page>

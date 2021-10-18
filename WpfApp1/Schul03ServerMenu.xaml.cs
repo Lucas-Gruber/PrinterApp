@@ -14,18 +14,18 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaktionslogik für SanktelisabethServerMenu.xaml
+    /// Interaktionslogik für Schul03ServerMenu.xaml
     /// </summary>
-    public partial class SanktelisabethServerMenu : Page
+    public partial class Schul03ServerMenu : Page
     {
-        public SanktelisabethServerMenu()
+        public Schul03ServerMenu()
         {
             InitializeComponent();
         }
 
         private void btn_back_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
@@ -39,7 +39,7 @@ namespace WpfApp1
 
         private void btn_install_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
     }
 }
