@@ -25,9 +25,7 @@ namespace WpfApp1
 
         private void btn_back_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mw = new MainWindow();
-            mw.Show();
-            this.
+
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
