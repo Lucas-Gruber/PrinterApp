@@ -25,23 +25,42 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        /* ///MAIN PAGE/// */
+
+        private void btn_accept_Click(object sender, RoutedEventArgs e)
         {
-            if(rb_sankte.IsChecked == true)
+            if(rb_se.IsChecked == true)
             {
-                SanktelisabethServerMenu sm = new SanktelisabethServerMenu();
-                MainWindow wm = new MainWindow();
-                this.Content = sm;
+                TabControlName.SelectedIndex = 1;
             }
             else if (rb_schul.IsChecked == true)
             {
-                lbl_server.Content = "Du hast Schul03 gewählt";
+                TabControlName.SelectedIndex = 2;
             }
         }
 
-        private void rb_server_checked(object sender, RoutedEventArgs e)
+        private void rb_se_Checked(object sender, RoutedEventArgs e)
         {
-            btn_next.IsEnabled = true;
+            btn_accept.IsEnabled = true;
         }
+        private void rb_schul_Checked(object sender, RoutedEventArgs e)
+        {
+            btn_accept.IsEnabled = true;
+        }
+
+
+        /* ///SE/SCHUL PAGE/// */
+        private void btn_back_Click(object sender, RoutedEventArgs e)
+        {
+            TabControlName.SelectedIndex = 0;
+        }
+
+
+        /* ///SE PAGE/// */
+
+
+
+        /* ///SCHUL PAGE/// */
     }
 }

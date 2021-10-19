@@ -6,21 +6,56 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="330" Width="523">
-    <!--<Label Content="Von welchem Druckserver wollen sie Drucker installieren?" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top" Height="32" Width="454" FontWeight="Normal" FontSize="18"/>
-        <RadioButton Content="Sanktelisabeth" HorizontalAlignment="Left" Margin="269,0,0,0" VerticalAlignment="Center" Height="27" Width="107" FontSize="14" Checked="onChecked"/>
-        <RadioButton Content="Schul03" HorizontalAlignment="Left" Margin="417,0,0,0" VerticalAlignment="Center" Height="27" Width="108" FontSize="14" Checked="onChecked"/>
-        <Button x:Name="weiterButton" Content="Weiter" HorizontalAlignment="Left" Margin="534,291,0,0" VerticalAlignment="Top" Height="45" Width="112" IsEnabled="False"/> -->
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <TabControl x:Name="TabControlName">
+            <TabItem Name="mainMenu" Visibility="Collapsed">
+                <StackPanel>
+                    <Label>Wähle sie bitte einen Druckserver aus:</Label>
+                    <RadioButton x:Name="rb_se" GroupName="printserver" Checked="rb_se_Checked">Sanktelisabeth</RadioButton>
+                    <RadioButton x:Name="rb_schul" GroupName="printserver" Checked="rb_schul_Checked">Schul03</RadioButton>
 
+                    <Button x:Name="btn_accept" Click="btn_accept_Click" IsEnabled="False" IsDefault="True" Content="Bestätige" Margin="20"/>
+                </StackPanel>
+            </TabItem>
 
-    <StackPanel Margin="20">
-        <Label>Wähle sie bitte einen Druckserver aus:</Label>
-        <RadioButton x:Name="rb_sankte" GroupName="printserver" Checked="rb_server_checked">Sanktelisabeth</RadioButton>
-        <RadioButton x:Name="rb_schul" GroupName="printserver" Checked="rb_server_checked">Schul03</RadioButton>
+            <TabItem Name="seMenu" Visibility="Collapsed">
+                <StackPanel>
+                    <Label FontSize="18" FontWeight="Bold">Sanktelisabeth:</Label>
+                    <Label>Nun wählen sie bitte aus welche Drucker sie installieren möchten:</Label>
+                    
+                    <CheckBox Margin="5" Content="Printer 1" />
+                    <CheckBox Margin="5" Content="Printer 2" />
+                    <CheckBox Margin="5" Content="Printer 3" />
+                    <CheckBox Margin="5" Content="Printer 4" />
+                    <CheckBox Margin="5" Content="Printer 5" />
 
-        <Button x:Name="btn_next" Click="Button_Click" Margin="20" IsEnabled="False" IsDefault="True">Bestätige</Button>
-        <Label x:Name="lbl_server" />
-    </StackPanel>
+                    <Button x:Name="btn_se_install" Click="btn_accept_Click" IsEnabled="False" IsDefault="True" Content="Bestätige" Margin="20"/>
+                    <Label></Label>
+                    <Button x:Name="btn_se_back" Click="btn_back_Click" IsCancel="True" Margin="10" Content="Zurück" Width="80" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Name="schulMenu" Visibility="Collapsed">
+                <StackPanel>
+                    <Label FontSize="18" FontWeight="Bold">Schul03:</Label>
+                    <Label>Nun wählen sie bitte aus welche Drucker sie installieren möchten:</Label>
+                    
+                    <CheckBox Margin="5" Content="Printer 1" />
+                    <CheckBox Margin="5" Content="Printer 2" />
+                    <CheckBox Margin="5" Content="Printer 3" />
+                    <CheckBox Margin="5" Content="Printer 4" />
+                    <CheckBox Margin="5" Content="Printer 5" />
+                    <CheckBox Margin="5" Content="Printer 5" />
+                    <CheckBox Margin="5" Content="Printer 5" />
+                    <CheckBox Margin="5" Content="Printer 5" />
+                    <CheckBox Margin="5" Content="Printer 5" />
+                    <CheckBox Margin="5" Content="Printer 5" />
+                    <CheckBox Margin="5" Content="Printer 5" />
 
-
-
+                    <Button x:Name="btn_schul_install" Click="btn_accept_Click" IsEnabled="False" IsDefault="True" Content="Bestätige" Margin="20"/>
+                    <Label></Label>
+                    <Button x:Name="btn_schul_back" Click="btn_back_Click" IsCancel="True" Margin="10" Content="Zurück" Width="80" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </ScrollViewer>
 </Window>
