@@ -13,8 +13,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace sePrinterApp
 {
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -23,7 +26,8 @@ namespace WpfApp1
         }
 
 
-        /* /// MAIN-PAGE /// */
+        /* ///MAIN PAGE/// */
+
         private void btn_accept_Click(object sender, RoutedEventArgs e)
         {
             if(rb_se.IsChecked == true)
@@ -46,17 +50,17 @@ namespace WpfApp1
         }
 
 
-        /* /// SE/SCHUL PAGE /// */
+        /* ///SE/SCHUL PAGE/// */
         private void btn_back_Click(object sender, RoutedEventArgs e)
         {
             TabControlName.SelectedIndex = 0;
         }
 
 
-        /* /// SE-PAGE /// */
+        /* ///SE PAGE/// */
 
 
 
-        /* /// SCHUL-PAGE /// */
+        /* ///SCHUL PAGE/// */
     }
 }
