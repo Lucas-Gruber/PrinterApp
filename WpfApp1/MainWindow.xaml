@@ -9,7 +9,7 @@
     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
         <TabControl x:Name="TabControlName">
             <TabItem Name="mainMenu" Visibility="Collapsed">
-                <StackPanel>
+                <StackPanel Margin="10">
                     <Label>Wähle sie bitte einen Druckserver aus:</Label>
                     <RadioButton x:Name="rb_se" GroupName="printserver" Checked="rb_se_Checked">Sanktelisabeth</RadioButton>
                     <RadioButton x:Name="rb_schul" GroupName="printserver" Checked="rb_schul_Checked">Schul03</RadioButton>
@@ -18,13 +18,14 @@
                 </StackPanel>
             </TabItem>
 
+            <!-- /// SE-Page /// -->
             <TabItem Name="seMenu" Visibility="Collapsed">
-                <StackPanel>
+                <StackPanel Margin="10">
                     <Label FontSize="18" FontWeight="Bold">Sanktelisabeth:</Label>
                     <Label>Nun wählen sie bitte aus welche Drucker sie installieren möchten:</Label>
-                    
-                    <CheckBox Margin="5" Content="Printer 1" />
-                    <CheckBox Margin="5" Content="Printer 2" />
+
+                    <CheckBox Margin="5" Content="Haus-01 - 1.OG - Gang" />
+                    <CheckBox Margin="5" Content="Haus-01 - 2.OG - Gang" />
                     <CheckBox Margin="5" Content="Printer 3" />
                     <CheckBox Margin="5" Content="Printer 4" />
                     <CheckBox Margin="5" Content="Printer 5" />
@@ -34,8 +35,10 @@
                     <Button x:Name="btn_se_back" Click="btn_back_Click" IsCancel="True" Margin="10" Content="Zurück" Width="80" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
                 </StackPanel>
             </TabItem>
+
+            <!-- /// School-Page /// -->
             <TabItem Name="schulMenu" Visibility="Collapsed">
-                <StackPanel>
+                <StackPanel Margin="10">
                     <Label FontSize="18" FontWeight="Bold">Schul03:</Label>
                     <Label>Nun wählen sie bitte aus welche Drucker sie installieren möchten:</Label>
                     
