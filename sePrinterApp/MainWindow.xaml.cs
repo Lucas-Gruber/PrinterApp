@@ -58,15 +58,25 @@ namespace sePrinterApp
 
         private void btn_install_Click(object sender, RoutedEventArgs e)
         {
-            if(Empf)
+            /*if (cb_printer_010_empfang.IsChecked == true)
+            {
+                Console.WriteLine("")
+            } */
+            
+            
         }
 
 
 
         /* ///SE PAGE/// */
+        
         private void cb_printer_010_empfang_Checked(object sender, RoutedEventArgs e)
         {
-
+            btn_se_install.IsEnabled = true;
+        }
+        private void cb_printer_010_empfang_Unchecked(object sender, RoutedEventArgs e)
+        {
+            btn_se_install.IsEnabled = false;
         }
 
 
