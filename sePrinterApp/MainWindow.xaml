@@ -24,13 +24,67 @@
                     <Label FontSize="18" FontWeight="Bold">Sanktelisabeth:</Label>
                     <Label>Nun wählen sie bitte aus welche Drucker sie installieren möchten:</Label>
 
-                    <CheckBox Margin="5" Content="Haus-01 - 1.OG - Gang" />
-                    <CheckBox Margin="5" Content="Haus-01 - 2.OG - Gang" />
-                    <CheckBox Margin="5" Content="Printer 3" />
-                    <CheckBox Margin="5" Content="Printer 4" />
-                    <CheckBox Margin="5" Content="Printer 5" />
+                    <Label Margin="0,10,0,0">Haus 1:</Label>
+                    <CheckBox Margin="5" Content="Haus 01 - EG - Empfang" x:Name="cb_printer_010_empfang" Checked="cb_printer_010_empfang_Checked" />
+                    <CheckBox Margin="5" Content="Haus 01 - EG - Küche" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 01 - EG - Pastoral" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 01 - 1.OG - Gang" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 01 - 1.OG - HoGa" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 01 - 2.OG - Gang" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 01 - 2.OG - FiBu" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 01 - 2.OG - WerkstattBvB" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 01 - 3.OG - Gang" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 01 - 3.OG - Raum10" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 01 - 3.OG - Raum12" Checked="rb_se_Checked" />
 
-                    <Button x:Name="btn_se_install" Click="btn_accept_Click" IsEnabled="False" IsDefault="True" Content="Bestätige" Margin="20"/>
+                    <Label Margin="0,10,0,0">Haus 5:</Label>
+                    <CheckBox Margin="5" Content="Haus 05 –EG – Fachlagerist" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 05 –EG - Maler" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 05 –EG - Metall" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 05 –EG - Raumausstatter" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 05 –EG – Schreiner" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 05 –EG - Sek-Ausbildung" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 05 –ESF - MuzZ" Checked="rb_se_Checked" />
+
+                    <Label Margin="0,10,0,0">Haus 6:</Label>
+                    <CheckBox Margin="5" Content="Haus 06 - EG - GaLaBau" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 06 - EG - Kraut und Rüben" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 06 - EG - Meisterbüron" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 06 - EG - Zierpflanzen" Checked="rb_se_Checked" />
+
+                    <Label Margin="0,10,0,0">Haus 7:</Label>
+                    <CheckBox Margin="5" Content="Haus 07 - UG - Raum11" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 07 - UG - AVIBA" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 07 - UG - BvB Reha" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 07 - EG - Gruppe1" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 07 - EG - Gruppe2" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 07 - 1.OG - Gruppe3" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 07 - 2.OG - Gruppe4" Checked="rb_se_Checked" />
+
+                    <Label Margin="0,10,0,0">Haus 8:</Label>
+                    <CheckBox Margin="5" Content="Haus 08 –EG –Gruppe9"  Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 08 –1.OG  - Gruppe 7" Checked="rb_se_Checked"  />
+                    <CheckBox Margin="5" Content="Haus 08 –1.OG  - Gruppe7 - CPKasse" Checked="rb_se_Checked"  />
+                    <CheckBox Margin="5" Content="Haus 08 –2.OG – Gruppe8" Checked="rb_se_Checked"  />
+                    <CheckBox Margin="5" Content="Haus 08 – UG - BvBReha" Checked="rb_se_Checked"  />
+
+
+                    <Label Margin="0,10,0,0">Haus 9:</Label>
+                    <CheckBox Margin="5" Content="Haus 09 - EG - FPD" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 09 - 1.OG - Gang" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 09 - 1.OG - Büromanagement" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 09 - 1.OG - Büromanagement-Farbe" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 09 - 2.OG - Integration" Checked="rb_se_Checked" />
+
+                    <Label Margin="0,10,0,0">Haus 10:</Label>
+                    <CheckBox Margin="5" Content="Haus 10 - 1.OG - Raum5" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Haus 10 - 2.OG - Gang" Checked="rb_se_Checked" />
+
+                    <Label Margin="0,10,0,0">Arbeitsbereiche:</Label>
+                    <CheckBox Margin="5" Content="Container KFZ Pflege" Checked="rb_se_Checked" />
+                    <CheckBox Margin="5" Content="Snackinsel - EG - Gang" Checked="rb_se_Checked" />
+
+                    <Button x:Name="btn_se_install" Click="btn_install_Click" IsEnabled="False" IsDefault="True" Content="Bestätige" Margin="20"/>
                     <Label></Label>
                     <Button x:Name="btn_se_back" Click="btn_back_Click" IsCancel="True" Margin="10" Content="Zurück" Width="80" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
                 </StackPanel>

@@ -56,9 +56,18 @@ namespace sePrinterApp
             TabControlName.SelectedIndex = 0;
         }
 
+        private void btn_install_Click(object sender, RoutedEventArgs e)
+        {
+            if(Empf)
+        }
+
+
 
         /* ///SE PAGE/// */
+        private void cb_printer_010_empfang_Checked(object sender, RoutedEventArgs e)
+        {
 
+        }
 
 
         /* ///SCHUL PAGE/// */
