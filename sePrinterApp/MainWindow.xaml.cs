@@ -58,10 +58,10 @@ namespace sePrinterApp
 
         private void btn_install_Click(object sender, RoutedEventArgs e)
         {
-            /*if (cb_printer_010_empfang.IsChecked == true)
+            using (PowerShell PowerShellInst = PowerShellInst.Create())
             {
-                Console.WriteLine("")
-            } */
+                PowerShell ps = PowerShell.Create
+            }
             
             
         }

@@ -25,7 +25,7 @@
                     <Label>Nun wählen sie bitte aus welche Drucker sie installieren möchten:</Label>
 
                     <Label Margin="0,10,0,0">Haus 1:</Label>
-                    <CheckBox Margin="5" Content="Haus 01 - EG - Empfang" Checked="cb_printer_010_empfang_Checked" Unchecked="cb_printer_010_empfang_Unchecked" />
+                    <CheckBox Margin="5" Content="Haus 01 - EG - Empfang" x:Name="cb_printer_010_empfang" Checked="cb_printer_010_empfang_Checked" Unchecked="cb_printer_010_empfang_Unchecked" />
                     <CheckBox Margin="5" Content="Haus 01 - EG - Küche" Checked="rb_se_Checked" />
                     <CheckBox Margin="5" Content="Haus 01 - EG - Pastoral" Checked="rb_se_Checked" />
                     <CheckBox Margin="5" Content="Haus 01 - 1.OG - Gang" Checked="rb_se_Checked" />
