@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Management.Automation;
+using System.Management.Automation.Runspaces;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.PowerShell;
 
 namespace sePrinterApp
 {
@@ -58,15 +61,15 @@ namespace sePrinterApp
 
         private void btn_install_Click(object sender, RoutedEventArgs e)
         {
-            using (PowerShell PowerShellInst = PowerShellInst.Create())
-            {
-                PowerShell ps = PowerShell.Create
-            }
-            
+            PowerShell ps = PowerShell.Create();
+            ps.AddScript("add-printer").AddParameter("-connectionname",@"\\172.21.0.5\BJE-01-0-Empfang").Invoke();
             
         }
 
-
+        /*private void btn_install_Click(object sender, RoutedEventArgs e)
+        {
+            PowerShell ps = PowerShell.Create();
+            ps.Addscript("add-printer).AddParameter("-connectionname",@"\\172.21.0.5\
 
         /* ///SE PAGE/// */
         
